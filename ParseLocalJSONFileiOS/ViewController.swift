@@ -10,20 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var data:NSData!
-    var stringData:NSString!
-    
+    var parseJSONData:ParseJSON!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-         let path = NSBundle.mainBundle().pathForResource("colour", ofType: ".json")!
-         do {
-            data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingUncached)
-            stringData = NSString(data: data, encoding: NSUTF8StringEncoding)
-         } catch {
-         print("error ")
-        }
-        print("data read: \(stringData)")
+        
+        parseJSONData = ParseJSON(fName:"colour", fType: ".json")
+       
        
     }
 

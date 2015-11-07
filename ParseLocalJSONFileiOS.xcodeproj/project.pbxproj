@@ -15,6 +15,7 @@
 		781C90651BEE3BF70043D268 /* ParseLocalJSONFileiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C90641BEE3BF70043D268 /* ParseLocalJSONFileiOSTests.swift */; };
 		781C90701BEE3BF70043D268 /* ParseLocalJSONFileiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C906F1BEE3BF70043D268 /* ParseLocalJSONFileiOSUITests.swift */; };
 		781C907E1BEE3C650043D268 /* colour.json in Resources */ = {isa = PBXBuildFile; fileRef = 781C907D1BEE3C650043D268 /* colour.json */; };
+		7893FC751BEE7AB2002586F7 /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7893FC741BEE7AB2002586F7 /* ParseJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		781C906F1BEE3BF70043D268 /* ParseLocalJSONFileiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseLocalJSONFileiOSUITests.swift; sourceTree = "<group>"; };
 		781C90711BEE3BF70043D268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		781C907D1BEE3C650043D268 /* colour.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colour.json; sourceTree = "<group>"; };
+		7893FC741BEE7AB2002586F7 /* ParseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		781C904E1BEE3BF70043D268 /* ParseLocalJSONFileiOS */ = {
 			isa = PBXGroup;
 			children = (
+				7893FC731BEE7A91002586F7 /* Model */,
 				781C907D1BEE3C650043D268 /* colour.json */,
 				781C904F1BEE3BF70043D268 /* AppDelegate.swift */,
 				781C90511BEE3BF70043D268 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				781C90711BEE3BF70043D268 /* Info.plist */,
 			);
 			path = ParseLocalJSONFileiOSUITests;
+			sourceTree = "<group>";
+		};
+		7893FC731BEE7A91002586F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7893FC741BEE7AB2002586F7 /* ParseJSON.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			files = (
 				781C90521BEE3BF70043D268 /* ViewController.swift in Sources */,
 				781C90501BEE3BF70043D268 /* AppDelegate.swift in Sources */,
+				7893FC751BEE7AB2002586F7 /* ParseJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +500,7 @@
 				781C90761BEE3BF70043D268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		781C90771BEE3BF70043D268 /* Build configuration list for PBXNativeTarget "ParseLocalJSONFileiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				781C90791BEE3BF70043D268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		781C907A1BEE3BF70043D268 /* Build configuration list for PBXNativeTarget "ParseLocalJSONFileiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				781C907C1BEE3BF70043D268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
